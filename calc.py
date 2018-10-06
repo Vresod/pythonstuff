@@ -1,3 +1,4 @@
+# -----------------------------------
 import math
 # -----------------------------------
 def add(x, y):# adding
@@ -22,13 +23,13 @@ def com(x, y):
 	else:
 		return 'Bad Input. Try Again'
 # -----------------------------------
-def round(x):
+def rnd(x):
 	numround = float(x) - int(x)
 	if numround < 0.5:
 		return math.floor(x)
 	else:
 		return math.ceil(x)
-def square(x):
+def sqr(x):
 	return math.pow(x, 2)
 # -----------------------------------
 print('---------------')
@@ -48,21 +49,23 @@ print('---------------')
 oper = input('Enter choice (1/2/3/4/5/6/7):')
 # -----------------------------------
 num1 = float(input('Number 1?:'))
-if not oper == '6' or not oper == '7':
+if not oper == '6' and not oper == '7':
 	num2 = float(input('Number 2?:'))
 # -----------------------------------
-if oper == '1' or oper == 'a':
+if oper == '1':
 	print(num1,'+',num2,'=',add(num1, num2))
-elif oper == '2' or oper == 's':
+elif oper == '2':
 	print(num1,'-',num2,'=',sub(num1, num2))
-elif oper == '3' or  oper == 'm':
+elif oper == '3':
 	print(num1,'*',num2,'=',mlt(num1, num2))
-elif oper == '4' or oper == 'd':
+elif oper == '4':
 	print(num1,'/',num2,'=',div(num1, num2))
-elif oper == '5' or oper == 'c':
+elif oper == '5':
 	print(num1,com(num1, num2),num2)
-elif oper == '6' or oper == 'r':
-	print(num1,'~=',round(num1))
+elif oper == '6':
+	print(num1,'~=',rnd(num1))
+elif oper == '7':
+	print(sqr(num1))
 else:
 	print('Bad Input. Try Again')
 # -----------------------------------
