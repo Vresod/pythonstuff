@@ -65,7 +65,7 @@ elif oper == '5':
 elif oper == '6':
 	print(num1,'~=',rnd(num1))
 elif oper == '7':
-	print(num1,'Squared is',sqr(num1))
+	print(num1,'squared is',sqr(num1))
 else:
 	print('Bad Input. Try Again')
 # -----------------------------------
