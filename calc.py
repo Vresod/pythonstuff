@@ -29,8 +29,9 @@ def rnd(x):
 		return math.floor(x)
 	else:
 		return math.ceil(x)
-def sqr(x):
-	return math.pow(x, 2)
+# -----------------------------------
+def pwr(x, y):
+	return math.pow(x, y)
 # -----------------------------------
 print('---------------')
 print('Choose an operation:')
@@ -42,14 +43,13 @@ print('4.Division')
 print('---------------')
 print('5.Compare')
 print('6.Round')
-print('---------------')
-print('7.Square')
+print('7.Powers')
 print('---------------')
 # -----------------------------------
 oper = input('Enter choice (1/2/3/4/5/6/7):')
 # -----------------------------------
 num1 = float(input('Number 1?:'))
-if not oper == '6' and not oper == '7':
+if not oper == '6' and not oper == '0':
 	num2 = float(input('Number 2?:'))
 # -----------------------------------
 if oper == '1':
@@ -65,7 +65,7 @@ elif oper == '5':
 elif oper == '6':
 	print(num1,'~=',rnd(num1))
 elif oper == '7':
-	print(num1,'squared is',sqr(num1))
+	print(num1,'^',num2,'=',pwr(num1, num2))
 else:
 	print('Bad Input. Try Again')
 # -----------------------------------
