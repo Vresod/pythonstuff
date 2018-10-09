@@ -1,8 +1,9 @@
 import os
 # -----------------------------------
 os.system('git add -A')
-comname = str('\'' + input('What is the commit name?: ') + '\'')
+comname = str(input('What is the commit name?: '))
 # -----------------------------------
-cmdrun = str('git commit -m' + comname)
+cmdrun = str('git commit -m' + '\'' + comname + '\'')
 os.system(cmdrun)
 os.system('git push')
+exit()
