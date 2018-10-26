@@ -1,5 +1,6 @@
 # -----------------------------------
 import math
+import os
 # -----------------------------------
 def add(x, y):# adding
 	return float(x) + float(y)
@@ -51,7 +52,7 @@ oper = input('Enter choice (1/2/3/4/5/6/7):')
 num1 = float(input('Number 1?:'))
 if not oper == '6' and not oper == '0':
 	num2 = float(input('Number 2?:'))
-# -----------------------------------
+# -----------------------------------+
 if oper == '1':
 	print(num1,'+',num2,'=',add(num1, num2))
 elif oper == '2':
