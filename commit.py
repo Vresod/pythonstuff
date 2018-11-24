@@ -1,5 +1,4 @@
 import os
-import time
 # -----------------------------------
 os.system('git add -A')
 comname = str(input('What is the commit name?: '))
