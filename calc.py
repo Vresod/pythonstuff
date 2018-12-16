@@ -66,7 +66,7 @@ elif oper == '5':
 elif oper == '6':
 	print(num1,'~=',rnd(num1))
 elif oper == '7':
-	print(num1,'^',num2,'=',pwr(num1, num2))
+	print(num1,'**',num2,'=',pwr(num1, num2))
 else:
 	print('Bad Input. Try Again')
 # -----------------------------------
